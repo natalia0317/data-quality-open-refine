@@ -75,6 +75,10 @@ spcmMValidation = descriptor booleano , 1 si la combinación stateProvince+Count
 
 Advertencias
 Si está usando el script por primera vez se recomienda cargar el conjunto de datos y el archivo de divipola, y reiniciar openRefine antes de correr el script
+---------------------------------------------------------------------------
+Por: Natalia Medina
+
+La rutina de validacion comprueba diferentes campos de interes realizando incialmente una limpieza de los datos para luego agruparlos en una nueva columna que sera sujeto de vadacion gramatival con la DIVIPOLA cargada a openrefine. No es claro el papel del reino en la expresion para la asignacon de valores de tpo boleano en la columna de validacion spcmValidation. Se realiza sumatoria de caracteres de cadena, realizando a la vez limpieza de las celdas. finalmente se hace la remosion de las columnas creaadas como parte de la validacion.
 
 ---Do not copy /No Copiar
 --------------------------------------------------------------------------------
