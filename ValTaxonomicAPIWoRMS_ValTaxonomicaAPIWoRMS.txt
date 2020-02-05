@@ -59,6 +59,11 @@ Para obtener la validación de la taxonomía superior también se requieren los 
 
 Los nuevos datos seran guardados en columnas el inicio del conjunto de datos
 Los elementos taxonómicos son reorganizados para facilitar la validación taxonómicas
+----------------------------------------------------------------------------------
+Por: Natalia Medina
+
+La rutina inicialmente hace una limpieza de los patrones de caracteres compartidos por varias cedenas como los esacios en blanco. Para luego realizar el reemplazo de los espacios por los caacteres reconocidos por el APIworms. Se hace la recuperacion al APIworms. Se cren secuencialmente las coumnas destinadas a cada casificacion segun el APIworms, comprobando la expresion gramatialmente, para isTerrestial isFreshwater, isBrackish, isMarine basados en el llamado al API. Se ace uso de condicinales para la asignacion de bolenaos para specificEpithet y elementos de la taxonomia superior
+Es clara en cuanto a la definicion de operaciones, descripciones y expresiones. 
 
 ---Do not copy /No Copiar
 --------------------------------------------------------------------------------
