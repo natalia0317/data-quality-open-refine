@@ -25,13 +25,13 @@ Review the output for nulls, canadensys may not recognize all date formats
 
 --ES
 
-Rutinas del SiB Colombia para la validaci�n y limpieza de datos primarios 
+Rutinas del SiB Colombia para la validación y limpieza de datos primarios 
 de Biodiversidad en OPEN REFINE
 
-Nombre rutina: Transformaci�n del formato de la fecha ISO 8601
+Nombre rutina: Transformación del formato de la fecha ISO 8601
 Languaje: GREL 'General Refine Expression Language'
 Creado:2018-03-21
-�ltima Actualizaci�n:2019-06-07
+Última Actualización:2019-06-07
 Autores:Camila Plata, Ricardo Ortiz 
 
 Esta rutina:
@@ -45,6 +45,10 @@ Conjunto de datos con el elemento DwC 'eventDate'
 
 Los nuevos datos seran guardados en columnas el inicio del conjunto de datos
 No todas las fechas son convertidas exitosamente por el API, revise las celdas donde el resultado haya sido nulo
+----------------------------------------------------------------------------
+Por: Natalia Medina
+
+La rutina de validcion de fechas de canadensys hace uso de expresiones basadas en la direccion web o URL de la pagina de canadesys. Igualmente tiene expresiones para transformar el texto y añadir nuevas columnas con los datos y resultados segun otras columnas, realizando peraciones de reemplazo. Tambien tiene funciones de comparacion gramatical de de formato iso8601 y transformacion de a ese formato de una cadena de caracteres. Asi mismo para dividir los componenete de las fechas hace uso de la funcion smartSplit que permite generar en diferente colunma los componetes temporales de mes, año y dia segun su posicion en el formato iso
 
 ---Do not copy /No Copiar
 ----------------------------------------------------------------------------
