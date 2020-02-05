@@ -58,7 +58,15 @@ Para obtener la validación de la taxonomía superior también se requieren los 
 Los nuevos datos seran guardados en columnas el inicio del conjunto de datos
 Los elementos taxonómicos son reorganizados para facilitar la validación taxonómicas
 
----Do not copy /No Copiar
+---------------------------------------------------------------------------------
+Por: Natalia Medina 
+
+La rutina de validacion con la API de GBIF es clara en cuanto a que cada operacion es definida, descrita y hace uso de una expresion que determina la accion a ejecutarse. Comienza haciendo una limpeza de los datos contenidos en las celdas para luego realizar operaciones con columnas (moviendo y adicionando) se usa la agregacion de columnas basada en otras columnas, conviertiendo a un formato reconocido por la API, para luego hace el llamado y crear nueva columna, donde se analiza gramaticalmente la cadena. Se crean nuevas columnas basadas en el llamado al API. Se hace uso claramente de condicionales para la asignacion de valores boleanos a las cadenas de caracteres para cada elemento de la taxonomia superior teniendo en cuenta el llamado al API.
+Se realizan tambien opeaciones evaluando las coincidencias con los elementos del API.
+
+Los pasos se entienden de forma secuencial. 
+
+.---Do not copy /No Copiar
 --------------------------------------------------------------------------------
 Copy from here/ Copiar Desde Aquí
 [
